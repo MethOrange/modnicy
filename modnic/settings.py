@@ -25,7 +25,7 @@ SECRET_KEY = '*c86bm6njv+b*ch)bmy)o&wf0^gwfa@t%5p1*^#r+dok6t+vl('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.hyperhost.name']
 
 
 # Application definition
