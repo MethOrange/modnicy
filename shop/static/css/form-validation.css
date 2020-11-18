@@ -1,0 +1,12 @@
+.container {
+    max-width: 960px;
+}
+
+.lh-condensed { line-height: 1.25; }
+
+.modnica {
+    background-color: #a851b9;
+}
+.bgnav {
+    background-color: rgba(168, 81, 185, 90);
+}

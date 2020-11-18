@@ -1,0 +1,121 @@
+.container {
+    max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+}
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+        -ms-flex: 1;
+        flex: 1;
+    }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+.bg-light{
+    font-family: "Playfair Display";
+    color: #000000;
+}
+.model {
+    font-family: "Playfair Display";
+    font-weight: 900;
+    color: #a851b9;
+    font-size: 36px;
+}
+.text-left {
+    font-weight: 700;
+    font-size: 20px;
+}
+.toorder {
+    background-color: #a851b9;
+}
+.bg {
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.tablebold {
+    font-weight: 700;
+    font-size: 20px;
+}
+.time{
+    font-size: 46px;
+    color: black;
+    font-weight: 900;
+}
+.font-modnica {
+    color: white;
+}
+.fontm {
+    margin-top: 75%;
+}
+.toorder1 {
+    background-color: rgba(168, 81, 185, 60);
+    border-color: white;
+}
+.bgnav {
+    background-color: rgba(168, 81, 185, 0.7);
+}
