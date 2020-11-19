@@ -13,9 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '*c86bm6njv+b*ch)bmy)o&wf0^gwfa@t%5p1*^#r+dok6t+vl('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['modnicy.com.ua','127.0.0.1','195.54.162.216']
+ALLOWED_HOSTS = ['modnicy.com.ua','195.54.162.216','127.0.0.1']
 
 
 # Application definition
