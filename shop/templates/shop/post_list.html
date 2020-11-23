@@ -187,17 +187,18 @@ var x = setInterval(function() {
                                         </div>
                                     </div>
 
-< <div class="row">
+ <form class="row" method="POST" action="create/">
+{% csrf_token %}
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                            <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваше имя и фамилию
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="tel">Номер телефона</label>
-                                            <input type="text" class="form-control" id="tel" placeholder="" value="" required>
+                                            <input type="text" name="phone" class="form-control" id="tel" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваш номер телефона
                                             </div>
@@ -230,8 +231,21 @@ var x = setInterval(function() {
 {#                                            <hr class="mb-4">#}
 {#                                            #}
 {#                                        </div>#}
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit">Купить товар</button>
-                                    </div>
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+                                    </form>
+{#                                     <form method="POST" action="create/">#}
+{#        {% csrf_token %}#}
+{#        <p>#}
+{#            <label>Введите имя</label><br>#}
+{#            <input type="text" name="name" />#}
+{#        </p>#}
+{#        <p>#}
+{#            <label>Введите возраст</label><br>#}
+{#            <input type="number" name="age" />#}
+{#        </p>#}
+{#        <input type="submit" value="Сохранить" >#}
+{#    </form>#}
+
                                 </div>
                             </div>
                         </div>
@@ -317,51 +331,25 @@ var x = setInterval(function() {
                                     </div>
 
 
-                                    <div class="row">
+                                    <form class="row" method="POST" action="create/">
+{% csrf_token %}
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                            <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваше имя и фамилию
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="tel">Номер телефона</label>
-                                            <input type="text" class="form-control" id="tel" placeholder="" value="" required>
+                                            <input type="text" name="phone" class="form-control" id="tel" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваш номер телефона
                                             </div>
                                         </div>
-{#                                        <div class="col-md-5 mb-3">#}
-{#                                            <label for="country"></label>#}
-{#                                            <select class="custom-select d-block w-100" id="country" required>#}
-{#                                                <option value="">Выберите размер</option>#}
-{#                                                <option>52-54</option>#}
-{#                                                <option>54-56</option>#}
-{#                                                <option>56-58</option>#}
-{##}
-{#                                            </select>#}
-{#                                            <div class="invalid-feedback">#}
-{#                                                Выберите размер#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                        <div class="col-md-4 mb-3">#}
-{#                                            <label for="state"></label>#}
-{#                                            <select class="custom-select d-block w-100" id="state" required>#}
-{#                                                <option value="">Выберите цвет</option>#}
-{#                                                <option>Красный</option>#}
-{#                                                <option>Бежевый</option>#}
-{#                                                <option>Белый</option>#}
-{#                                                <option>Чёрный</option>#}
-{#                                            </select>#}
-{#                                            <div class="invalid-feedback">#}
-{#                                                Выберите цвет#}
-{#                                            </div>#}
-{#                                            <hr class="mb-4">#}
-{#                                            #}
-{#                                        </div>#}
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit">Купить товар</button>
-                                    </div>
+
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -467,51 +455,25 @@ var x = setInterval(function() {
                                     </div>
 
 
-                                    <div class="row">
+                                     <form class="row" method="POST" action="create/">
+{% csrf_token %}
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                            <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваше имя и фамилию
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="tel">Номер телефона</label>
-                                            <input type="text" class="form-control" id="tel" placeholder="" value="" required>
+                                            <input type="text" name="phone" class="form-control" id="tel" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваш номер телефона
                                             </div>
                                         </div>
-{#                                        <div class="col-md-5 mb-3">#}
-{#                                            <label for="country"></label>#}
-{#                                            <select class="custom-select d-block w-100" id="country" required>#}
-{#                                                <option value="">Выберите размер</option>#}
-{#                                                <option>52-54</option>#}
-{#                                                <option>54-56</option>#}
-{#                                                <option>56-58</option>#}
-{##}
-{#                                            </select>#}
-{#                                            <div class="invalid-feedback">#}
-{#                                                Выберите размер#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                        <div class="col-md-4 mb-3">#}
-{#                                            <label for="state"></label>#}
-{#                                            <select class="custom-select d-block w-100" id="state" required>#}
-{#                                                <option value="">Выберите цвет</option>#}
-{#                                                <option>Красный</option>#}
-{#                                                <option>Бежевый</option>#}
-{#                                                <option>Белый</option>#}
-{#                                                <option>Чёрный</option>#}
-{#                                            </select>#}
-{#                                            <div class="invalid-feedback">#}
-{#                                                Выберите цвет#}
-{#                                            </div>#}
-{#                                            <hr class="mb-4">#}
-{#                                            #}
-{#                                        </div>#}
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit">Купить товар</button>
-                                    </div>
+
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -589,51 +551,25 @@ var x = setInterval(function() {
                                     </div>
 
 
-                                    <div class="row">
+                                    <form class="row" method="POST" action="create/">
+{% csrf_token %}
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                            <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваше имя и фамилию
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="tel">Номер телефона</label>
-                                            <input type="text" class="form-control" id="tel" placeholder="" value="" required>
+                                            <input type="text" name="phone" class="form-control" id="tel" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваш номер телефона
                                             </div>
                                         </div>
-{#                                        <div class="col-md-5 mb-3">#}
-{#                                            <label for="country"></label>#}
-{#                                            <select class="custom-select d-block w-100" id="country" required>#}
-{#                                                <option value="">Выберите размер</option>#}
-{#                                                <option>52-54</option>#}
-{#                                                <option>54-56</option>#}
-{#                                                <option>56-58</option>#}
-{##}
-{#                                            </select>#}
-{#                                            <div class="invalid-feedback">#}
-{#                                                Выберите размер#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                        <div class="col-md-4 mb-3">#}
-{#                                            <label for="state"></label>#}
-{#                                            <select class="custom-select d-block w-100" id="state" required>#}
-{#                                                <option value="">Выберите цвет</option>#}
-{#                                                <option>Красный</option>#}
-{#                                                <option>Бежевый</option>#}
-{#                                                <option>Белый</option>#}
-{#                                                <option>Чёрный</option>#}
-{#                                            </select>#}
-{#                                            <div class="invalid-feedback">#}
-{#                                                Выберите цвет#}
-{#                                            </div>#}
-{#                                            <hr class="mb-4">#}
-{#                                            #}
-{#                                        </div>#}
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit">Купить товар</button>
-                                    </div>
+
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -711,51 +647,25 @@ var x = setInterval(function() {
                                     </div>
 
 
-                                    <div class="row">
+                                     <form class="row" method="POST" action="create/">
+{% csrf_token %}
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                            <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваше имя и фамилию
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="tel">Номер телефона</label>
-                                            <input type="text" class="form-control" id="tel" placeholder="" value="" required>
+                                            <input type="text" name="phone" class="form-control" id="tel" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваш номер телефона
                                             </div>
                                         </div>
-{#                                        <div class="col-md-5 mb-3">#}
-{#                                            <label for="country"></label>#}
-{#                                            <select class="custom-select d-block w-100" id="country" required>#}
-{#                                                <option value="">Выберите размер</option>#}
-{#                                                <option>52-54</option>#}
-{#                                                <option>54-56</option>#}
-{#                                                <option>56-58</option>#}
-{##}
-{#                                            </select>#}
-{#                                            <div class="invalid-feedback">#}
-{#                                                Выберите размер#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                        <div class="col-md-4 mb-3">#}
-{#                                            <label for="state"></label>#}
-{#                                            <select class="custom-select d-block w-100" id="state" required>#}
-{#                                                <option value="">Выберите цвет</option>#}
-{#                                                <option>Красный</option>#}
-{#                                                <option>Бежевый</option>#}
-{#                                                <option>Белый</option>#}
-{#                                                <option>Чёрный</option>#}
-{#                                            </select>#}
-{#                                            <div class="invalid-feedback">#}
-{#                                                Выберите цвет#}
-{#                                            </div>#}
-{#                                            <hr class="mb-4">#}
-{#                                            #}
-{#                                        </div>#}
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit">Купить товар</button>
-                                    </div>
+
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -834,51 +744,25 @@ var x = setInterval(function() {
             </div>
 
 
-            <div class="row">
+             <form class="row" method="POST" action="create/">
+{% csrf_token %}
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                            <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваше имя и фамилию
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="tel">Номер телефона</label>
-                                            <input type="text" class="form-control" id="tel" placeholder="" value="" required>
+                                            <input type="text" name="phone" class="form-control" id="tel" placeholder="" value="" required>
                                             <div class="invalid-feedback">
                                                 Введите Ваш номер телефона
                                             </div>
                                         </div>
-{#                                        <div class="col-md-5 mb-3">#}
-{#                                            <label for="country"></label>#}
-{#                                            <select class="custom-select d-block w-100" id="country" required>#}
-{#                                                <option value="">Выберите размер</option>#}
-{#                                                <option>52-54</option>#}
-{#                                                <option>54-56</option>#}
-{#                                                <option>56-58</option>#}
-{##}
-{#                                            </select>#}
-{#                                            <div class="invalid-feedback">#}
-{#                                                Выберите размер#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                        <div class="col-md-4 mb-3">#}
-{#                                            <label for="state"></label>#}
-{#                                            <select class="custom-select d-block w-100" id="state" required>#}
-{#                                                <option value="">Выберите цвет</option>#}
-{#                                                <option>Красный</option>#}
-{#                                                <option>Бежевый</option>#}
-{#                                                <option>Белый</option>#}
-{#                                                <option>Чёрный</option>#}
-{#                                            </select>#}
-{#                                            <div class="invalid-feedback">#}
-{#                                                Выберите цвет#}
-{#                                            </div>#}
-{#                                            <hr class="mb-4">#}
-{#                                            #}
-{#                                        </div>#}
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit">Купить товар</button>
-                                    </div>
+
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+                                    </form>
         </div>
     </div>
 </div>
