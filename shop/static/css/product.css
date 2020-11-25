@@ -120,3 +120,9 @@
 .bgnav {
     background-color: rgba(168, 81, 185, 0.7);
 }
+
+.tovar {
+    background: #d160ff;
+    width: 15%;
+    height: 15%;
+}

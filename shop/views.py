@@ -96,5 +96,7 @@ def create(request):
         tom = Person()
         tom.name = request.POST.get("name")
         tom.phone = request.POST.get("phone")
+        tom.color = request.POST.get("color")
+        tom.size = request.POST.get("size")
         tom.save()
     return HttpResponseRedirect("/")
