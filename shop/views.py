@@ -98,5 +98,6 @@ def create(request):
         tom.phone = request.POST.get("phone")
         tom.color = request.POST.get("color")
         tom.size = request.POST.get("size")
+        tom.articul = request.POST.get("articul")
         tom.save()
     return HttpResponseRedirect("/")

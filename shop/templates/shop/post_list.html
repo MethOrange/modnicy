@@ -30,6 +30,8 @@
         background: #d160ff;
         width: 15%;
         height: 15%;
+        outline : 3px solid #ffffff;
+        padding: 5px;
                 }
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -50,6 +52,21 @@
     <link href="{% static 'css/product.css' %}" rel="stylesheet">
 </head>
 <body>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ваш заказ оформлен</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary toorder" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top  bgnav">
     <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png' %}" width="170" height="50"></a>
 {#    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">#}
@@ -156,6 +173,8 @@ var x = setInterval(function() {
                                         </a>
                                     </div>
                                     <!-- Товар и его описание -->
+{#<form class="row" method="POST" action="create/">#}
+{#{% csrf_token %}#}
                                     <div class="model">
                                         Кофточка арт 0380/1
                                     </div>
@@ -236,12 +255,14 @@ var x = setInterval(function() {
                                             <hr class="mb-4">
 
                                         </div>
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+{#                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>#}
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" data-toggle="modal" data-target="#exampleModal">Купить товар</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
 <!-- Конец товара -->
+
      <!-- Универсальный товар -->
                         <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                             <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 375px; height: 100%; border-radius: 0 0 0 0;">
@@ -368,7 +389,7 @@ var x = setInterval(function() {
                                             <hr class="mb-4">
 
                                         </div>
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" data-toggle="modal" data-target="#exampleModal">Купить товар</button>
                                     </form>
                                 </div>
                             </div>
@@ -520,7 +541,7 @@ var x = setInterval(function() {
                                             <hr class="mb-4">
 
                                         </div>
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" data-toggle="modal" data-target="#exampleModal">Купить товар</button>
                                     </form>
                                 </div>
                             </div>
@@ -644,7 +665,7 @@ var x = setInterval(function() {
                                             <hr class="mb-4">
 
                                         </div>
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" data-toggle="modal" data-target="#exampleModal">Купить товар</button>
                                     </form>
                                 </div>
                             </div>
@@ -768,7 +789,7 @@ var x = setInterval(function() {
                                             <hr class="mb-4">
 
                                         </div>
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" data-toggle="modal" data-target="#exampleModal">Купить товар</button>
                                     </form>
                                 </div>
                             </div>
@@ -893,7 +914,7 @@ var x = setInterval(function() {
                                             <hr class="mb-4">
 
                                         </div>
-                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" >Купить товар</button>
+                                        <button class="btn btn-primary btn-lg toorder btn-block" type="submit" data-toggle="modal" data-target="#exampleModal">Купить товар</button>
                                     </form>
         </div>
     </div>
