@@ -151,17 +151,25 @@ var x = setInterval(function() {
                                 <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
 
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{% static 'img/products/image1.1.jpg' %}" alt="Первый слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image22.1.jpg' %}" alt="Первый слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image1.2.jpg' %}" alt="Второй слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image22.2.jpg' %}" alt="Второй слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image1.3.jpg' %}" alt="Третий слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image22.3.jpg' %}" alt="Третий слайд">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{% static 'img/products/image22.4.jpg' %}" alt="Второй слайд">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{% static 'img/products/image22.5.jpg' %}" alt="Третий слайд">
                                 </div>
                             </div>
                                         <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -177,7 +185,7 @@ var x = setInterval(function() {
 {#<form class="row" method="POST" action="create/">#}
 {#{% csrf_token %}#}
                                     <div class="model">
-                                        Кофточка арт 0380/1
+                                        Костюм брючный арт 0392/0394
                                     </div>
                                     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                                         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 375px; height: 100%; border-radius: 0 0 0 0;">
@@ -186,25 +194,31 @@ var x = setInterval(function() {
                                                     <thead>
                                                     <tr>
                                                         <th scope="col"><span class="tablebold">Ткань:</span></th>
-                                                        <td scope="col">травка с люрексом (имеет легкий блеск). Вставки сетки с бархатистым рисунком </td>
+                                                        <td scope="col">Материал брюк  - стрейчевая экокожа. Пояс и низ на резинке, средняя посадка, карманы. Прилагается съемный пояс из плотной корсажной ленты с вышитыми буквами. Длина по внутреннему шву 65 см, по внешнему 91 см.  Материал кофточки - травка (теплая, мягкая, приятная на ощупь ткань). Длина изделия 64см, рукава - 61см. Носить можно на два плеча (вырез лодочкой) или спускать одно плечо.</td>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
                                                         <td><span class="tablebold">Цвет:</span></td>
                                                         <td>чёрный</td>
+                                                        <td>фиолетовый</td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Размеры:</span></td>
-                                                        <td><strong class="tovar"> 48-52 </strong><strong class="tovar"> 54-58 </strong><strong class="tovar"> 60-64</strong></td>
+                                                        <td><strong class="tovar"> 50-52 </strong><strong class="tovar"> 54-56 </strong><strong class="tovar"> 58-60</strong><strong class="tovar"> 62-64</strong></td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Замеры:</span></td>
-                                                        <td> 48-52 - на ОГ 96-106, 54-58 - на ОГ 108-118, 60-64- на ОГ 120-132</td>
+                                                        <td> 42-44- ОБ до 97 см, ОГ до 95
+                                                                46-48- ОБ до 104см, ОГ до 101
+                                                                50-52 - ОБ до 118 см, ОГ до 114см
+                                                                54-56- ОБ до 128см, ОГ до 114см
+                                                                58-60 - ОБ до 138 см, ОГ до 128см
+                                                                62-64 - ОБ до 148 см,  ОГ до 128см</td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Цена:</span></td>
-                                                        <td><strike>1320</strike><strong> 400 грн</strong></td>
+                                                        <td><strike>1050</strike><strong> 635 грн</strong></td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -214,7 +228,7 @@ var x = setInterval(function() {
 
  <form class="row" method="POST" action="create/">
 {% csrf_token %}
-     <input type="hidden" name="articul" value="Кофточка арт 0380/1">
+     <input type="hidden" name="articul" value="Костюм брючный арт 0392/0394">
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
                                             <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
@@ -233,10 +247,10 @@ var x = setInterval(function() {
                                             <label for="country"></label>
                                             <select class="custom-select d-block w-100" name="size" id="country" required>
                                                 <option value="">Выберите размер</option>
-                                                <option>48-52</option>
-                                                <option>54-58</option>
-                                                <option>60-64</option>
-
+                                                <option>50-52</option>
+                                                <option>54-56</option>
+                                                <option>58-60</option>
+                                                <option>62-64</option>
                                             </select>
                                             <div class="invalid-feedback">
                                                 Выберите размер
@@ -248,7 +262,7 @@ var x = setInterval(function() {
                                                 <option value="">Выберите цвет</option>
 {#                                                <option>Красный</option>#}
 {#                                                <option>Бежевый</option>#}
-{#                                                <option>Белый</option>#}
+                                                <option>Фиолетовый</option>
                                                 <option>Чёрный</option>
                                             </select>
                                             <div class="invalid-feedback">
@@ -408,49 +422,20 @@ var x = setInterval(function() {
                                 <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
-                                <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
-                                <li data-target="#carouselExampleIndicators3" data-slide-to="5"></li>
-                                <li data-target="#carouselExampleIndicators3" data-slide-to="6"></li>
-                                <li data-target="#carouselExampleIndicators3" data-slide-to="7"></li>
-                                <li data-target="#carouselExampleIndicators3" data-slide-to="8"></li>
-                                <li data-target="#carouselExampleIndicators3" data-slide-to="9"></li>
-                                <li data-target="#carouselExampleIndicators3" data-slide-to="10"></li>
+
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.1.jpg' %}" alt="Первый слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image21.1.jpg' %}" alt="Первый слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.2.jpg' %}" alt="Второй слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image21.2.jpg' %}" alt="Второй слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.3.jpg' %}" alt="Третий слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image21.3.jpg' %}" alt="Третий слайд">
                                 </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.4.jpg' %}" alt="Четвёртый слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.5.jpg' %}" alt="Пятый слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.6.jpg' %}" alt="Шестой слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.7.jpg' %}" alt="Седьмой слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.8.jpg' %}" alt="Восьмой слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.9.jpg' %}" alt="Девятый слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.10.jpg' %}" alt="Десятый слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.11.jpg' %}" alt="Одиннадцатый слайд">
-                                </div>
+
+
                             </div>
                                         <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -463,7 +448,7 @@ var x = setInterval(function() {
                                     </div>
                                     <!-- Товар и его описание -->
                                     <div class="model">
-                                        Кофточка Арт 0369
+                                        Костюм арт 05450
                                     </div>
                                     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                                         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 375px; height: 100%; border-radius: 0 0 0 0;">
@@ -472,26 +457,29 @@ var x = setInterval(function() {
                                                     <thead>
                                                     <tr>
                                                         <th scope="col"><span class="tablebold">Ткань:</span></th>
-                                                        <td scope="col">травка (мягкая, тёплая ткань, не кошлатится ). Вставки  ажурного кружева Мулине (не стрейчевое)</td>
+                                                        <td scope="col">материал: черный - трикотаж с байковым напылением внутри, белый - трикотаж. Отличная растяжимость. Декорирован тесьмой c буквами. Манжет на кофте можно подтягивать, подгибать и делать кофту короче и с напуском. Очень хорошая растяжимость. Верх : длина переда 72 см,  длина рукава от плеча 60 см. Параметры модели Кристины: 102-82-110 , рост 173
+Низ - средняя посадка, пояс на резинке, длина 78/102 см. </td>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
                                                         <td><span class="tablebold">Цвет:</span></td>
-                                                        <td>чёрный, беж, серый</td>
+                                                        <td>чёрный</td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Размеры:</span></td>
-                                                        <td><strong class="tovar"> 48-54 </strong><strong class="tovar"> 56-62 </strong></td>
+                                                        <td><strong class="tovar"> 42-44 </strong><strong class="tovar"> 46-48 </strong><strong class="tovar"> 48-52 </strong><strong class="tovar"> 54-58 </strong><strong class="tovar"> 60-64 </strong></td>
 
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Замеры:</span></td>
-                                                        <td>во 2 р - ОГ 118, в 3 р - 128см, при выборе размера учитывайте запас на свободу облегания</td>
+                                                        <td>48-52р: От 87, ОБ 102- 122, ОГ 114
+                                                            54-58: ОТ 91, ОБ 106- 132, ОГ 124
+                                                            60-64: ОТ 96-, ОБ 112-142, ОГ 140</td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Цена:</span></td>
-                                                        <td><strike>1320</strike><strong> 417 грн</strong></td>
+                                                        <td><strike>1320</strike><strong> 504 грн</strong></td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -502,7 +490,7 @@ var x = setInterval(function() {
 
                                      <form class="row" method="POST" action="create/">
 {% csrf_token %}
-                                         <input type="hidden" name="articul" value="Кофточка Арт 0369">
+                                         <input type="hidden" name="articul" value="Костюм арт 05450">
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
                                             <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
@@ -521,8 +509,11 @@ var x = setInterval(function() {
                                             <label for="country"></label>
                                             <select class="custom-select d-block w-100" name="size" id="country" required>
                                                 <option value="">Выберите размер</option>
-                                                <option>48-54</option>
-                                                <option>56-62</option>
+                                                <option>42-44</option>
+                                                <option>46-48</option>
+                                                <option>48-52</option>
+                                                <option>54-58</option>
+                                                <option>60-64</option>
 {#                                                <option>60-64</option>#}
 
                                             </select>
@@ -535,8 +526,8 @@ var x = setInterval(function() {
                                             <select class="custom-select d-block w-100" name="color" id="state" required>
                                                 <option value="">Выберите цвет</option>
 {#                                                <option>Красный</option>#}
-                                                <option>Серый</option>
-                                                <option>Беж</option>
+{#                                                <option>Серый</option>#}
+{#                                                <option>Беж</option>#}
                                                 <option>Чёрный</option>
                                             </select>
                                             <div class="invalid-feedback">
@@ -941,13 +932,13 @@ var x = setInterval(function() {
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{% static 'img/products/image11.1.jpg' %}" alt="Первый слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image23.1.jpg' %}" alt="Первый слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image11.2.jpg' %}" alt="Второй слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image23.2.jpg' %}" alt="Второй слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image11.3.jpg' %}" alt="Третий слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image23.3.jpg' %}" alt="Третий слайд">
                                 </div>
                             </div>
                                         <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
@@ -961,7 +952,7 @@ var x = setInterval(function() {
                                     </div>
                                     <!-- Товар и его описание -->
                                     <div class="model">
-                                        Праздничный нарядный костюм арт 05406
+                                        Костюм Арт 5455
                                     </div>
                                     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                                         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 375px; height: 100%; border-radius: 0 0 0 0;">
@@ -970,34 +961,26 @@ var x = setInterval(function() {
                                                     <thead>
                                                     <tr>
                                                         <th scope="col"><span class="tablebold">Ткань:</span></th>
-                                                        <td scope="col">трикотаж с блеском ((люрексовая нить в составе ткани, очень качественный материал), декорирован кружевом плотной вязки. В тунике - боковые разрезы. Лосины средней посадки. пояс на резинке. Материал очень хорошей растяжимости.</td>
+                                                        <td scope="col">двухнитка (хорошего качества) со вставками плотного трикотажа. </td>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
                                                         <td><span class="tablebold">Цвет:</span></td>
-                                                        <td>чёрный</td>
+                                                        <td>серый</td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Размеры:</span></td>
-                                                        <td><strong class="tovar"> 48-52 </strong><strong class="tovar"> 54-58 </strong><strong class="tovar"> 60-64 </strong></td>
+                                                        <td><strong class="tovar"> 42-44 </strong><strong class="tovar"> 46-48 </strong><strong class="tovar"> 50-54 </strong><strong class="tovar"> 56-60 </strong></td>
 
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Замеры:</span></td>
-                                                        <td>Лосины - средняя посадка, пояс на резинке, длина 78/102 см
-48-52р: От 87, ОБ 102- 124
-54-58: ОТ 91, ОБ 106- 130
-60-64: ОТ 96-, ОБ 112-138
-Очень хорошая растяжимость
-Туника: длина переда 80см, спинки 100см,  длина рукава от шеи 59/31см,
-48-52- ОГ, ОТ, ОБ 110,, ширина руки вверху 38 см
-54-58- ОГ, ОТ, ОБ 120, ширина руки вверху 43см
-60-64- ОГ, ОТ, ОБ 130, ширина руки вверху 48 см</td>
+                                                        <td>42-44, 46-48, 50-54, 56-60</td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Цена:</span></td>
-                                                        <td><strike>1320</strike><strong> 852  грн</strong></td>
+                                                        <td><strike>1020</strike><strong> 590  грн</strong></td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -1008,7 +991,7 @@ var x = setInterval(function() {
 
                                      <form class="row" method="POST" action="create/">
 {% csrf_token %}
-                                         <input type="hidden" name="articul" value="Праздничный нарядный костюм арт 05406">
+                                         <input type="hidden" name="articul" value="Костюм Арт 5455">
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
                                             <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
@@ -1027,10 +1010,10 @@ var x = setInterval(function() {
                                             <label for="country"></label>
                                             <select class="custom-select d-block w-100" name="size" id="country" required>
                                                 <option value="">Выберите размер</option>
-                                                <option>48-52</option>
-                                                <option>54-58</option>
-                                                <option>60-64</option>
-
+                                                <option>42-44</option>
+                                                <option>46-48</option>
+                                                <option>50-54</option>
+                                                <option>56-60</option>
                                             </select>
                                             <div class="invalid-feedback">
                                                 Выберите размер
@@ -1043,7 +1026,7 @@ var x = setInterval(function() {
 {#                                                <option>Красный</option>#}
 {#                                                <option>Серый</option>#}
 {#                                                <option>Беж</option>#}
-                                                <option>Чёрный</option>
+                                                <option>Серый</option>
                                             </select>
                                             <div class="invalid-feedback">
                                                 Выберите цвет
@@ -1065,19 +1048,12 @@ var x = setInterval(function() {
                         <div id="carouselExampleIndicators12" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators12" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators12" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators12" data-slide-to="2"></li>
+
 
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{% static 'img/products/image12.1.jpg' %}" alt="Первый слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image12.2.jpg' %}" alt="Второй слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image12.3.jpg' %}" alt="Третий слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image24.1.jpg' %}" alt="Первый слайд">
                                 </div>
                             </div>
                                         <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
@@ -1091,7 +1067,7 @@ var x = setInterval(function() {
                                     </div>
                                     <!-- Товар и его описание -->
                                     <div class="model">
-                                        Платье арт 05121
+                                        Костюм Арт 5453
                                     </div>
                                     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                                         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 375px; height: 100%; border-radius: 0 0 0 0;">
@@ -1100,28 +1076,26 @@ var x = setInterval(function() {
                                                     <thead>
                                                     <tr>
                                                         <th scope="col"><span class="tablebold">Ткань:</span></th>
-                                                        <td scope="col">теплый вязаный трикотаж с ворсинамиа, по плечам вставки люрексовой резинки,  длина 100см</td>
+                                                        <td scope="col">двухнитка (хорошего качества) со вставками плотного трикотажа. </td>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
                                                         <td><span class="tablebold">Цвет:</span></td>
-                                                        <td>чёрный</td>
+                                                        <td>серый</td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Размеры:</span></td>
-                                                        <td><strong class="tovar"> 48-54 </strong><strong class="tovar"> 56-62 </strong></td>
+                                                        <td><strong class="tovar"> 42-44 </strong><strong class="tovar"> 46-48 </strong><strong class="tovar"> 50-54 </strong><strong class="tovar"> 56-60 </strong></td>
 
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Замеры:</span></td>
-                                                        <td>48-54 - на ОГ 98-108, ОБ 108-118см
-
-56-62 - на ОГ 112-128, ОБ 120-137см</td>
+                                                        <td>42-44, 46-48, 50-54, 56-60</td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Цена:</span></td>
-                                                        <td><strike>852</strike><strong> 414 грн</strong></td>
+                                                        <td><strike>852</strike><strong> 590 грн</strong></td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -1132,7 +1106,7 @@ var x = setInterval(function() {
 
                                      <form class="row" method="POST" action="create/">
 {% csrf_token %}
-                                         <input type="hidden" name="articul" value="Платье арт 05121">
+                                         <input type="hidden" name="articul" value="Костюм Арт 5453">
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
                                             <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
@@ -1151,8 +1125,10 @@ var x = setInterval(function() {
                                             <label for="country"></label>
                                             <select class="custom-select d-block w-100" name="size" id="country" required>
                                                 <option value="">Выберите размер</option>
-                                                <option>48-54</option>
-                                                <option>56-62</option>
+                                                <option>42-44</option>
+                                                <option>46-48</option>
+                                                <option>50-54</option>
+                                                <option>56-60</option>
 {#                                                <option>60-64</option>#}
 
                                             </select>
@@ -1167,7 +1143,7 @@ var x = setInterval(function() {
 {#                                                <option>Красный</option>#}
 {#                                                <option>Серый</option>#}
 {#                                                <option>Беж</option>#}
-                                                <option>Чёрный</option>
+                                                <option>Серый</option>
                                             </select>
                                             <div class="invalid-feedback">
                                                 Выберите цвет
@@ -1181,39 +1157,20 @@ var x = setInterval(function() {
                             </div>
                         </div>
 <!-- Конец товара -->
-     <!-- Универсальный товар -->
+<!-- Универсальный товар -->
                         <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                             <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 375px; height: 100%; border-radius: 0 0 0 0;">
                                 <div class="bg-light shadow-sm mx-auto" style="width: 96%; height: 96%; border-radius: 0 0 0 0;">
                                     <!-- Слайдер -->
-                        <div id="carouselExampleIndicators13" class="carousel slide" data-ride="carousel">
+                        <div id="carouselExampleIndicators12" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators13" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators13" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators13" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleIndicators13" data-slide-to="3"></li>
-                                <li data-target="#carouselExampleIndicators13" data-slide-to="4"></li>
-                                <li data-target="#carouselExampleIndicators13" data-slide-to="5"></li>
+                                <li data-target="#carouselExampleIndicators12" data-slide-to="0" class="active"></li>
+
 
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{% static 'img/products/image13.1.jpg' %}" alt="Первый слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image13.2.jpg' %}" alt="Второй слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image13.3.jpg' %}" alt="Третий слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image13.4.jpg' %}" alt="Четвёртый слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image13.5.jpg' %}" alt="Пятый слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image13.6.jpg' %}" alt="Шестой слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image25.1.jpg' %}" alt="Первый слайд">
                                 </div>
                             </div>
                                         <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
@@ -1227,7 +1184,7 @@ var x = setInterval(function() {
                                     </div>
                                     <!-- Товар и его описание -->
                                     <div class="model">
-                                        Шуба женская двусторонняя арт 5436,2
+                                        Костюм Арт 5454
                                     </div>
                                     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                                         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 375px; height: 100%; border-radius: 0 0 0 0;">
@@ -1236,29 +1193,26 @@ var x = setInterval(function() {
                                                     <thead>
                                                     <tr>
                                                         <th scope="col"><span class="tablebold">Ткань:</span></th>
-                                                        <td scope="col">с одной стороны - шерсть с акрилом, с другой - плащевая ткань на 150 синтепоне. Длина 116 см, длина рукава от плеча 64 см. Застегивается на пуговицы, имеются Карманы с одной и второй стороны. Можно одевать и в дождь (со стороны плащевки) и в снег.</td>
+                                                        <td scope="col">двухнитка (хорошего качества) со вставками плотного трикотажа. </td>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
                                                         <td><span class="tablebold">Цвет:</span></td>
-                                                        <td>чёрный</td>
+                                                        <td>серый</td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Размеры:</span></td>
-                                                        <td><strong class="tovar"> 42-46 </strong><strong class="tovar"> 48-52 </strong><strong class="tovar"> 54-58 </strong></td>
+                                                        <td><strong class="tovar"> 42-44 </strong><strong class="tovar"> 46-48 </strong><strong class="tovar"> 50-54 </strong><strong class="tovar"> 56-60 </strong></td>
 
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Замеры:</span></td>
-                                                        <td>Замеры на шубу с учетом на свободу облегания от 3-8 см:
-42-46- ОГ и ОБ 100 см
-48-52 - ОГ и ОБ до 114см
-54-58-ОГ и ОБ до 130 см</td>
+                                                        <td>42-44, 46-48, 50-54, 56-60</td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Цена:</span></td>
-                                                        <td><strike>1320</strike><strong> 997 грн</strong></td>
+                                                        <td><strike>852</strike><strong> 590 грн</strong></td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -1269,7 +1223,7 @@ var x = setInterval(function() {
 
                                      <form class="row" method="POST" action="create/">
 {% csrf_token %}
-                                         <input type="hidden" name="articul" value="Шуба женская двусторонняя арт 5436,2">
+                                         <input type="hidden" name="articul" value="Костюм Арт 5454">
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
                                             <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
@@ -1288,9 +1242,11 @@ var x = setInterval(function() {
                                             <label for="country"></label>
                                             <select class="custom-select d-block w-100" name="size" id="country" required>
                                                 <option value="">Выберите размер</option>
-                                                <option>42-46</option>
-                                                <option>48-52</option>
-                                                <option>54-58</option>
+                                                <option>42-44</option>
+                                                <option>46-48</option>
+                                                <option>50-54</option>
+                                                <option>56-60</option>
+{#                                                <option>60-64</option>#}
 
                                             </select>
                                             <div class="invalid-feedback">
@@ -1304,7 +1260,7 @@ var x = setInterval(function() {
 {#                                                <option>Красный</option>#}
 {#                                                <option>Серый</option>#}
 {#                                                <option>Беж</option>#}
-                                                <option>Чёрный</option>
+                                                <option>Серый</option>
                                             </select>
                                             <div class="invalid-feedback">
                                                 Выберите цвет
@@ -1328,46 +1284,20 @@ var x = setInterval(function() {
                                 <li data-target="#carouselExampleIndicators14" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators14" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleIndicators14" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleIndicators14" data-slide-to="3"></li>
-                                <li data-target="#carouselExampleIndicators14" data-slide-to="4"></li>
-                                <li data-target="#carouselExampleIndicators14" data-slide-to="5"></li>
-                                <li data-target="#carouselExampleIndicators14" data-slide-to="6"></li>
-                                <li data-target="#carouselExampleIndicators14" data-slide-to="7"></li>
-                                <li data-target="#carouselExampleIndicators14" data-slide-to="8"></li>
-                                <li data-target="#carouselExampleIndicators14" data-slide-to="9"></li>
+
 
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{% static 'img/products/image14.1.jpg' %}" alt="Первый слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image26.1.jpg' %}" alt="Первый слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image14.2.jpg' %}" alt="Второй слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image26.2.jpg' %}" alt="Второй слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image14.3.jpg' %}" alt="Третий слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image26.3.jpg' %}" alt="Третий слайд">
                                 </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image14.4.jpg' %}" alt="Четвёртый слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image14.5.jpg' %}" alt="Пятый слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image14.6.jpg' %}" alt="Шестой слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image14.7.jpg' %}" alt="Седьмой слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image14.8.jpg' %}" alt="Восьмой слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image14.9.jpg' %}" alt="Девятый слайд">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image14.10.jpg' %}" alt="Десятый слайд">
-                                </div>
+
                             </div>
                                         <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -1380,7 +1310,7 @@ var x = setInterval(function() {
                                     </div>
                                     <!-- Товар и его описание -->
                                     <div class="model">
-                                        Платье коктейльное арт 05349
+                                        Туника Кожа арт 0399
                                     </div>
                                     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
                                         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 375px; height: 100%; border-radius: 0 0 0 0;">
@@ -1389,29 +1319,32 @@ var x = setInterval(function() {
                                                     <thead>
                                                     <tr>
                                                         <th scope="col"><span class="tablebold">Ткань:</span></th>
-                                                        <td scope="col">стрейчевый джинс-бенгалин, сзади разрез со шлицей, застежка - молния</td>
+                                                        <td scope="col">Экокожа стрейчевая, на рукавах вставки кружева. Длина 87/99 см, рукав - 61см. </td>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
                                                         <td><span class="tablebold">Цвет:</span></td>
-                                                        <td>чёрный, красный</td>
+                                                        <td>чёрный</td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Размеры:</span></td>
-                                                        <td><strong class="tovar"> 42-44 </strong>
-                                                        <strong class="tovar"> 50-52 </strong>
-                                                            <strong class="tovar"> 58-60 </strong>
+                                                        <td><strong class="tovar"> 48-52 </strong>
+                                                        <strong class="tovar"> 54-58 </strong>
+                                                            <strong class="tovar"> 60-64 </strong>
                                                         </td>
 
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Замеры:</span></td>
-                                                        <td>42-44, 46-48, 50-52, 54-56, 58-60</td>
+                                                        <td>48-52 - на ОГ 96-105, ОБ 104-114
+54-58 - на ОГ 106-117, ОБ 115-126
+60-64 - на ОГ 118-128, ОБ - 127-138
+Параметры модели Елены: 104-81-110 (52 р) рост 170 </td>
                                                     </tr>
                                                     <tr>
                                                         <td><span class="tablebold">Цена:</span></td>
-                                                        <td><strike>780</strike><strong> 590 грн</strong></td>
+                                                        <td><strike>580</strike><strong> 417 грн</strong></td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -1422,7 +1355,7 @@ var x = setInterval(function() {
 
                                      <form class="row" method="POST" action="create/">
 {% csrf_token %}
-                                         <input type="hidden" name="articul" value="Платье коктейльное арт 05349">
+                                         <input type="hidden" name="articul" value="Туника Кожа арт 0399">
                                         <div class="col-md-6 mb-3">
                                             <label for="firstName">Ф.И.О</label>
                                             <input type="text" name="name" class="form-control" id="firstName" placeholder="" value="" required>
@@ -1441,11 +1374,11 @@ var x = setInterval(function() {
                                             <label for="country"></label>
                                             <select class="custom-select d-block w-100" name="size" id="country" required>
                                                 <option value="">Выберите размер</option>
-                                                <option>42-44</option>
-                                                <option>46-48</option>
-                                                <option>50-52</option>
-                                                <option>54-56</option>
-                                                <option>58-60</option>
+                                                <option>48-52</option>
+                                                <option>54-58</option>
+                                                <option>60-64</option>
+{#                                                <option>54-56</option>#}
+{#                                                <option>58-60</option>#}
 
                                             </select>
                                             <div class="invalid-feedback">
@@ -1456,7 +1389,7 @@ var x = setInterval(function() {
                                             <label for="state"></label>
                                             <select class="custom-select d-block w-100" name="color" id="state" required>
                                                 <option value="">Выберите цвет</option>
-                                                <option>Красный</option>
+{#                                                <option>Красный</option>#}
 {#                                                <option>Серый</option>#}
 {#                                                <option>Беж</option>#}
                                                 <option>Чёрный</option>
@@ -1632,19 +1565,19 @@ var x = setInterval(function() {
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{% static 'img/products/image1.3.jpg' %}" alt="Первый слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image21.1.jpg' %}" alt="Первый слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image12.2.jpg' %}" alt="Второй слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image22.1.jpg' %}" alt="Второй слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image3.3.jpg' %}" alt="Третий слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image23.1.jpg' %}" alt="Третий слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image14.2.jpg' %}" alt="Четвёртый слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image24.1.jpg' %}" alt="Четвёртый слайд">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{% static 'img/products/image11.3.jpg' %}" alt="Пятый слайд">
+                                    <img class="d-block w-100" src="{% static 'img/products/image25.1.jpg' %}" alt="Пятый слайд">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicatorsGallery" role="button" data-slide="prev">
